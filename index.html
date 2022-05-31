@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Aula de CSS</title>
     <style>
+        #residente {
+            color: #ff0000;
+        }
+
         .cidade {
             text-decoration: underline;
             text-decoration-style: dashed;
@@ -22,14 +26,14 @@
 </head>
 
 <body>
-    <h1 class="cidade">Aula de CSS</h1>
+    <h1 class="residente">Aula de CSS</h1>
     <table>
         <ol>
             <li class="estado">Minas Gerais
                 <ul>
-                    <li>Juiz de Fora</li>
-                    <li>Mariana</li>
-                    <li>Muriaé</li>
+                    <li id="residente" class="cidade">Juiz de Fora</li>
+                    <li class="cidade">Mariana</li>
+                    <li class="cidade">Muriaé</li>
                 </ul>
             </li>
             <li class="estado;">Bahia</li>
