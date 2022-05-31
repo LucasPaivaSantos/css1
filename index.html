@@ -7,38 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Aula de CSS</title>
     <style>
-        ul > li {
-            text-decoration: underline;
-            font-size: medium;
-        }
-        ol > li {
+        .cidade {
             text-decoration: underline;
             text-decoration-style: dashed;
+            font-size: medium;
+        }
+
+        li.estado {
+            text-decoration: underline;
+            text-decoration-style: dotted;
             font-size: medium;
         }
     </style>
 </head>
 
 <body>
-    <h1>Aula de CSS</h1>
+    <h1 class="cidade">Aula de CSS</h1>
     <table>
         <ol>
-            <li style="font-size: x-large;">Minas Gerais</li>
-            <li style="font-weight: bolder;">Bahia</li>
-            <li style="font-size: x-small; font-weight: ligther; text-transform: uppercase;">Paraíba</li>
-            <li style="font-size: x-small; font-weight: ligther; font-variant: small-caps;">Ceará</li>
+            <li class="estado">Minas Gerais
+                <ul>
+                    <li>Juiz de Fora</li>
+                    <li>Mariana</li>
+                    <li>Muriaé</li>
+                </ul>
+            </li>
+            <li class="estado;">Bahia</li>
+            <ul>
+                <li class="cidade">Santana</li>
+                <li class="cidade">Salvador</li>
+            </ul>
+            <li class="estado">Ceará</li>
+            <ul>
+                <li class="cidade">Sobral</li>
+            </ul>
+            <li class="estado">Paraíba</li>
+            <ul>
+                <li class="cidade">João Pessoa</li>
+            </ul>
+
         </ol>
     </table>
 
-    <table>
-        <ul>
-            <li>Juiz de Fora</li>
-            <li>Mariana</li>
-            <li>Salvador</li>
-            <li>João Pessoa</li>
-            <li>Sobral</li>
-        </ul>
-    </table>
 
 </body>
 
